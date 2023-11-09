@@ -14,7 +14,7 @@ Oppdoor is a travel application API built with Flask and MySQL to manage travel 
 1. Clone the Oppdoor repository to your local machine:
 
 ```
-git clone https://github.com/your-username/oppdoor.git
+https://github.com/Murli0399/Oppdoor_Assignment.git
 ```
 2. Install the required Python packages:
 ```
@@ -35,94 +35,94 @@ python app.py
 ```
 6. The API is now accessible at http://localhost:5000.
 
-### API Endpoints
-User Registration
-Register a User
-Endpoint: /register
-Method: POST
-Request Data: JSON data with username, email, and password.
-Response: Registers a new user and returns a success message or an error message.
-Destination Management
-Create a Destination
+## API Endpoints
+### User Registration
+- Register a User
+  - Endpoint: /register
+  - Method: POST
+  - Request Data: JSON data with username, email, and password.
+  - Response: Registers a new user and returns a success message or an error message.
 
-Endpoint: /destination
-Method: POST
-Request Data: JSON data with name, description, and location.
-Response: Creates a new destination and returns a success message or an error message.
-Get all Destinations
+### Destination Management
+- Create a Destination
+  - Endpoint: /destination
+  - Method: POST
+  - Request Data: JSON data with name, description, and location.
+  - Response: Creates a new destination and returns a success message or an error message.
 
-Endpoint: /destination
-Method: GET
-Response: Retrieves a list of all destinations.
-Get a Specific Destination by ID
+- Get all Destinations
+  - Endpoint: /destination
+  - Method: GET
+  - Response: Retrieves a list of all destinations.
 
-Endpoint: /destination/<int:id>
-Method: GET
-Response: Retrieves a specific destination by its ID or returns a message if not found.
-Update a Destination by ID
+- Get a Specific Destination by ID
+  - Endpoint: /destination/<int:id>
+  - Method: GET
+  - Response: Retrieves a specific destination by its ID or returns a message if not found.
 
-Endpoint: /destination/<int:id>
-Method: PUT
-Request Data: JSON data with name, description, and location.
-Response: Updates a destination by its ID and returns a success message or an error message.
-Delete a Destination by ID
+- Update a Destination by ID
+  - Endpoint: /destination/<int:id>
+  - Method: PUT
+  - Request Data: JSON data with name, description, and location.
+  - Response: Updates a destination by its ID and returns a success message or an error message.
 
-Endpoint: /destination/<int:id>
-Method: DELETE
-Response: Deletes a destination by its ID and returns a success message or an error message.
-Itinerary Planning
-Create an Itinerary
+- Delete a Destination by ID
+  - Endpoint: /destination/<int:id>
+  - Method: DELETE
+  - Response: Deletes a destination by its ID and returns a success message or an error message.
 
-Endpoint: /itineraries
-Method: POST
-Request Data: JSON data with user_id, destination_id, start_date, and end_date.
-Response: Creates a new itinerary and returns a success message or an error message.
-Get all Itineraries
+### Itinerary Planning
+- Create an Itinerary
+  - Endpoint: /itineraries
+  - Method: POST
+  - Request Data: JSON data with user_id, destination_id, start_date, and end_date.
+  - Response: Creates a new itinerary and returns a success message or an error message.
 
-Endpoint: /itineraries
-Method: GET
-Response: Retrieves a list of all itineraries.
-Get a Specific Itinerary by ID
+- Get all Itineraries
+  - Endpoint: /itineraries
+  - Method: GET
+  - Response: Retrieves a list of all itineraries.
 
-Endpoint: /itineraries/<int:id>
-Method: GET
-Response: Retrieves a specific itinerary by its ID or returns a message if not found.
-Update an Itinerary by ID
+- Get a Specific Itinerary by ID
+  - Endpoint: /itineraries/<int:id>
+  - Method: GET
+  - Response: Retrieves a specific itinerary by its ID or returns a message if not found.
 
-Endpoint: /itineraries/<int:id>
-Method: PUT
-Request Data: JSON data with user_id, destination_id, start_date, and end_date.
-Response: Updates an itinerary by its ID and returns a success message or an error message.
-Delete an Itinerary by ID
+- Update an Itinerary by ID
+  - Endpoint: /itineraries/<int:id>
+  - Method: PUT
+  - Request Data: JSON data with user_id, destination_id, start_date, and end_date.
+  - Response: Updates an itinerary by its ID and returns a success message or an error message.
 
-Endpoint: /itineraries/<int:id>
-Method: DELETE
-Response: Deletes an itinerary by its ID and returns a success message or an error message.
-Expense Tracking
-Get all Expenses
+- Delete an Itinerary by ID
+  - Endpoint: /itineraries/<int:id>
+  - Method: DELETE
+  - Response: Deletes an itinerary by its ID and returns a success message or an error message.
 
-Endpoint: /expenses
-Method: GET
-Response: Retrieves a list of all expenses.
-Create an Expense
+### Expense Tracking
+- Get all Expenses
+  - Endpoint: /expenses
+  - Method: GET
+  - Response: Retrieves a list of all expenses.
 
-Endpoint: /expenses
-Method: POST
-Request Data: JSON data with user_id, itinerary_id, amount, description, date, and category_id.
-Response: Creates a new expense and returns a success message or an error message.
-Get a Specific Expense by ID
+- Create an Expense
+  - Endpoint: /expenses
+  - Method: POST
+  - Request Data: JSON data with user_id, itinerary_id, amount, description, date, and category_id.
+  - Response: Creates a new expense and returns a success message or an error message.
 
-Endpoint: /expenses/<int:id>
-Method: GET
-Response: Retrieves a specific expense by its ID or returns a message if not found.
-Update an Expense by ID
+- Get a Specific Expense by ID
+  - Endpoint: /expenses/<int:id>
+  - Method: GET
+  - Response: Retrieves a specific expense by its ID or returns a message if not found.
 
-Endpoint: /expenses/<int:id>
-Method: PUT
-Request Data: JSON data with user_id, itinerary_id, amount, description, date, and category_id.
-Response: Updates an expense by its ID and returns a success message or an error message.
-Delete an Expense by ID
+- Update an Expense by ID
+  - Endpoint: /expenses/<int:id>
+  - Method: PUT
+  - Request Data: JSON data with user_id, itinerary_id, amount, description, date, and category_id.
+  - Response: Updates an expense by its ID and returns a success message or an error message.
 
-Endpoint: /expenses/<int:id>
-Method: DELETE
-Response: Deletes an expense by its ID and returns a success message or an error message.
+- Delete an Expense by ID
+  - Endpoint: /expenses/<int:id>
+  - Method: DELETE
+  - Response: Deletes an expense by its ID and returns a success message or an error message.
