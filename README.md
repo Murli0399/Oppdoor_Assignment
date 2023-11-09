@@ -1,4 +1,4 @@
-# Oppdoor - Travel Application API Documentation
+# Oppdoor - Travel Application API
 Oppdoor is a travel application API built with Flask and MySQL to manage travel destinations, plan itineraries, and track expenses. This documentation provides an overview of the available API endpoints and their functionalities.
 
 ### Table of Contents
