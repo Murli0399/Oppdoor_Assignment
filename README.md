@@ -136,3 +136,18 @@ python app.py
   - Endpoint: /expenses/<int:id>
   - Method: DELETE
   - Response: Deletes an expense by its ID and returns a success message or an error message.
+
+
+## 🔗 Contact Me
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://murli0399.github.io/)
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/murli-khaire/)
+
+
+## Authors
+
+- [Murli Khaire](https://github.com/Murli0399)
+
+## Acknowledgements
+
+- [Masai School](https://www.masaischool.com/)
