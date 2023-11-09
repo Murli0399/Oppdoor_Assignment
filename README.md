@@ -9,6 +9,16 @@ Oppdoor is a travel application API built with Flask and MySQL to manage travel 
   - Itinerary Planning
   - Expense Tracking
 
+### Tech Stack
+Oppdoor is powered by the following technologies:
+
+- **Flask:** A Python web framework for API development.
+- **MySQL:** A relational database for data storage.
+- **pymysql:** A Python library for database connectivity.
+- **JSON:** Data exchange format for API communication.
+- **Postman:** For API testing and documentation.
+- **Git/GitHub:** Version control and code hosting.
+This stack ensures an efficient, and collaborative development environment for Oppdoor.
 
 ### Getting Started
 1. Clone the Oppdoor repository to your local machine:
