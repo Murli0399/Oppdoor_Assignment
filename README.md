@@ -1,46 +1,41 @@
 # Oppdoor - Travel Application API Documentation
 Oppdoor is a travel application API built with Flask and MySQL to manage travel destinations, plan itineraries, and track expenses. This documentation provides an overview of the available API endpoints and their functionalities.
 
-Table of Contents
-Getting Started
-Testing the API
-API Endpoints
-User Registration
-Destination Management
-Itinerary Planning
-Expense Tracking
-Getting Started
-Clone the Oppdoor repository to your local machine:
+### Table of Contents
+- Getting Started
+- API Endpoints
+  - User Registration
+  - Destination Management
+  - Itinerary Planning
+  - Expense Tracking
 
-bash
-Copy code
+
+### Getting Started
+1. Clone the Oppdoor repository to your local machine:
+
+```
 git clone https://github.com/your-username/oppdoor.git
-Install the required Python packages:
-
-bash
-Copy code
+```
+2. Install the required Python packages:
+```
 pip install -r requirements.txt
-Set up a MySQL database and configure your connection details in the Flask application:
-
-python
-Copy code
+```
+3. Set up a MySQL database and configure your connection details in the Flask application:
+```
 app.config['MYSQL_USER'] = 'your_username'
 app.config['MYSQL_PASSWORD'] = 'your_password'
 app.config['MYSQL_DB'] = 'oppdoor'
 app.config['MYSQL_HOST'] = 'localhost'
-Create the necessary database tables (e.g., Users, Destination, Itineraries, Expenses) with their corresponding fields. Refer to the provided code for table creation SQL commands.
+```
+4. Create the necessary database tables (e.g., Users, Destination, Itineraries, Expenses) with their corresponding fields. Refer to the provided code for table creation SQL commands.
 
-Start the Flask application:
-
-bash
-Copy code
+5. Start the Flask application:
+```
 python app.py
-The API is now accessible at http://localhost:5000.
+```
+6. The API is now accessible at http://localhost:5000.
 
-Testing the API
-You can use tools like curl, Postman, or HTTPie to test the API endpoints. Make requests to the endpoints as described in the following sections.
-
-API Endpoints
+### API Endpoints
 User Registration
 Register a User
 Endpoint: /register
